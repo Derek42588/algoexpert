@@ -14,16 +14,12 @@ class AnotherListNode {
   }
 }
 function deleteNode(root: ListNode | null): void {
-  let pointer = root;
-  if (pointer) {
-    while (pointer && pointer.next !== null) {
-      let curr: ListNode = pointer;
-      curr.val = pointer.next.val;
-      curr.next = pointer.next.next;
-
-      pointer = curr.next;
-      debugger;
+  if (root !== null) {
+    if (root.next) {
+      root.val = root.next.val
+      root.next = root.next.next
     }
+    
   }
 }
 
