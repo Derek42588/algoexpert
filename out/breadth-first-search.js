@@ -6,8 +6,13 @@ https://www.algoexpert.io/questions/Breadth-first%20Search
 
 Analyses:
 
-Time:
-Space:
+Time: O(N) where N is the number of nodes in the graph/tree
+Space: O(W) where W is the greatest breadth level of the tree
+
+not remotely how he put it:
+
+Time: O(v + e ) time
+Space: O (v) space - where V is the number of vertices and E is the number of edges
 
 */
 var Node = /** @class */ (function () {
