@@ -23,7 +23,6 @@ function fibonacciCheck(n) {
         }
         else {
             greatestFib = fibRecursive(pointer);
-            debugger;
             fibMemo[pointer] = greatestFib;
             if (greatestFib === n) {
                 break;
@@ -31,7 +30,6 @@ function fibonacciCheck(n) {
         }
         pointer++;
     }
-    debugger;
     function fibRecursive(num) {
         if (num < 2) {
             return num;
@@ -39,7 +37,6 @@ function fibonacciCheck(n) {
         return fibRecursive(num - 1) + fibRecursive(num - 2);
     }
     var x = Object.values(fibMemo);
-    var answer = x.includes(n);
     return x.includes(n);
 }
 fibonacciCheck(8);
